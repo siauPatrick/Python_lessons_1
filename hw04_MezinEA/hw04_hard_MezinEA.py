@@ -17,7 +17,7 @@ print('\n Задание №1')
 """
 не хард, т.к. затрагивали на уроке :)
 """
-print(list(zip(*matrix)))
+print(list(map(list, zip(*matrix))))
 
 # Суть сложности hard: Решите задачу в одну строку
 
@@ -173,7 +173,7 @@ for i in range(16):
         rj += 1
         left_diagonal_list.append([])
 
-for i in left_diagonal_list[:15]:
+for i in left_diagonal_list[:15]:f
     if reduce(lambda x, y: x + y, i) > 1:
         print('есть ферзи, которые бьют друг на левой диагонали')
         fight = fight + 1
